@@ -15,6 +15,7 @@ You display a Bolt-12 QR code on your stream. When someone watching your stream 
 
 ### Install*
 
+* [bolt12tips](https://github.com/bolt12tips/bolt12tips/releases/tag/1.0)
 * [OBS Studio 28.x+](https://obsproject.com/download)
 * [Python 3.11.9](https://www.python.org/ftp/python/3.11.9/python-3.11.9-amd64.exe)
 * [phoenixd 0.3.4-jvm](https://github.com/ACINQ/phoenixd/releases) (Note: Windows must use the JVM version, but Linux/Mac OS can install native versions)
@@ -25,7 +26,9 @@ If using the JVM version of phoenixd:
 
 ### Setup Python
 
-1. install Python modules
+1. Unzip the `bolt12tips-1.0.zip` file to a directory of your choice.
+
+2. install Python modules
 ```sh
 python3 -m pip install --upgrade pip
 python3 -m pip install qrcode asyncio esdk-obs-python websockets
@@ -35,7 +38,7 @@ python3 -m pip install qrcode asyncio esdk-obs-python websockets
 
 1. From OBS Studio go to `tools -> scripts`
 2. Go to the `Python Settings` tab and select your Python installation
-3. Go to the `Scripts` tab, select `Add Scripts` and select bolt12tips.py
+3. Go to the `Scripts` tab, select `Add Scripts` and select bolt12tips.py from the directory where you unzipped the `bolt12tips-1.0.zip` file.
 4. Create and position the following scene items:
  - image called `cat`, display: hidden
  - text called `received`, display: hidden
