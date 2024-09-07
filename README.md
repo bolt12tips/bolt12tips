@@ -49,12 +49,16 @@ python3 -m pip install qrcode asyncio esdk-obs-python websockets
 2. run `phoenixd.bat`
 3. (first time) read and follow the installation instructions
 4. (first time) write down the 12 recovery words and keep them safe
-5. note the `lno...` bolt-12 static invoice
+    #### note the `lno...` bolt-12 static invoice output by the `phoenixd` server
 
 ### Run the Script in OBS Studio
 1. From OBS Studio go to `tools -> scripts`
-2. select the `bolt12tips.py` script and run it.
-3. select `show logs` and make sure you see `Connected!` and no error messages
+2. Select the `bolt12tips.py` script.
+3. The first time you run the script:
+ - Fill out the `http-password-limited-access` field from the value found in the `phoenix.conf` file in the `.phoenix` directory created by phoenixd.
+ - Fill out the `bolt12-offer` field with the `lno...` bolt-12 static invoice output by the `phoenixd` server.
+4. Run (or refresh) the `bolt12tips.py` script
+5. Select `show logs` and make sure you see `Connected!` and no error messages
 
 ![script_dialog.png](script_dialog.png)
 
