@@ -68,14 +68,15 @@ DONE! you can now start streaming and receiving Bitcoin tips.
 
 ### FAQ
 
-* How do I install Python so it works with OBS Studio?
+#### How do I install Python so it works with OBS Studio?
 
 See [How to Configure OBS to Run Python Scripts](https://learnscript.net/en/obs-python-scripting/setup/)
 
-* How can I send bolt-12 tips? 
+#### How can I send bolt-12 tips?
+  Install [Phoenix Wallet](https://phoenix.acinq.co/) on an Android or iOS phone, or see [bolt12.org](https://bolt12.org) for a current list of other implementations.
 
-Install [Phoenix Wallet](https://phoenix.acinq.co/) on an Android or iOS phone, or see [bolt12.org](https://bolt12.org) for a current list of other implementations.
-
-* How can I use my Bitcoin tips stored in `phoenixd`?
-
-From the command line you can use the `phoenixd-cli --help` to see how you can send your funds to pay for goods from an online merchant or to your mobile Lightning wallet for in-person purchases.
+#### How can I use my Bitcoin tips stored in `phoenixd`?
+  From the command line you can use the `phoenixd-cli --help` to see how you can send your funds to pay for goods from an online merchant or to your mobile Lightning wallet for in-person purchases.
+    
+#### How can I help improve this project?
+  You can ask questions or submit a pull request with your improvements or suggestions at [github.com/bolt12tips](https://github.com/bolt12tips/bolt12tips)
